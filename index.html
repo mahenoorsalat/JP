@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>秋山塾 - 新潟県上越市・妙高市・糸魚川市の個別指導塾</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- GSAP Plugins -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 
 </head>
 <body>
@@ -478,25 +482,508 @@
 
     </section>
 
-    <script>
-        // GSAP Animations
-        gsap.registerPlugin();
+      <!-- FAQ Section -->
+    <section class="akj-faq-section">
+        <div class="akj-container">
+            <div class="akj-section-header">
+                <h2 class="akj-section-title">よくある質問</h2>
+                <img src="/assets/decoration.png" alt="">
+               
+                </div>
+            </div>
+            
+            <ul class="akj-faq-list">
+                <li class="akj-faq-item">
+                    <div class="akj-faq-question">
+                        <div class="akj-q-mark">Q</div>
+                        <div class="akj-question-text">どのような生徒が通っていますか？</div>
+                        <div class="akj-toggle-icon"></div>
+                    </div>
+                </li>
+                
+                <li class="akj-faq-item active">
+                    <div class="akj-faq-question">
+                        <div class="akj-q-mark">Q</div>
+                        <div class="akj-question-text">子どもの性格上、なかなか質問ができないのですが大丈夫ですか？</div>
+                        <div class="akj-toggle-icon"></div>
+                    </div>
+                    <div class="akj-faq-answer" style="display: block;">
+                        <div class="akj-answer-text">答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。答えが入ります。</div>
+                    </div>
+                </li>
+                
+                <li class="akj-faq-item">
+                    <div class="akj-faq-question">
+                        <div class="akj-q-mark">Q</div>
+                        <div class="akj-question-text">体験授業とはどのようなものですか？</div>
+                        <div class="akj-toggle-icon"></div>
+                    </div>
+                </li>
+                
+                <li class="akj-faq-item">
+                    <div class="akj-faq-question">
+                        <div class="akj-q-mark">Q</div>
+                        <div class="akj-question-text">体験授業をしてみて、入塾を決めなくても大丈夫ですか？</div>
+                        <div class="akj-toggle-icon"></div>
+                    </div>
+                </li>
+                
+                <li class="akj-faq-item">
+                    <div class="akj-faq-question">
+                        <div class="akj-q-mark">Q</div>
+                        <div class="akj-question-text">入塾はいつからできますか? 入塾テストはありますか？</div>
+                        <div class="akj-toggle-icon"></div>
+                    </div>
+                </li>
+                
+                <li class="akj-faq-item">
+                    <div class="akj-faq-question">
+                        <div class="akj-q-mark">Q</div>
+                        <div class="akj-question-text">他の習い事や部活と両立できますか？</div>
+                        <div class="akj-toggle-icon"></div>
+                    </div>
+                </li>
+                
+                <li class="akj-faq-item">
+                    <div class="akj-faq-question">
+                        <div class="akj-q-mark">Q</div>
+                        <div class="akj-question-text">振替授業はありますか？</div>
+                        <div class="akj-toggle-icon"></div>
+                    </div>
+                </li>
+                
+                <li class="akj-faq-item">
+                    <div class="akj-faq-question">
+                        <div class="akj-q-mark">Q</div>
+                        <div class="akj-question-text">授業料はいくらですか？</div>
+                        <div class="akj-toggle-icon"></div>
+                    </div>
+                </li>
+                
+                <li class="akj-faq-item">
+                    <div class="akj-faq-question">
+                        <div class="akj-q-mark">Q</div>
+                        <div class="akj-question-text">学校の授業進度やカリキュラムに合わせて教えてもらえますか？</div>
+                        <div class="akj-toggle-icon"></div>
+                    </div>
+                </li>
+                
+                <li class="akj-faq-item">
+                    <div class="akj-faq-question">
+                        <div class="akj-q-mark">Q</div>
+                        <div class="akj-question-text">定期テスト対策はしてくれますか？</div>
+                        <div class="akj-toggle-icon"></div>
+                    </div>
+                </li>
+                
+                <li class="akj-faq-item">
+                    <div class="akj-faq-question">
+                        <div class="akj-q-mark">Q</div>
+                        <div class="akj-question-text">志望校に合わせて受験対策はできますか？</div>
+                        <div class="akj-toggle-icon"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-        // Hero Slider
+    <!-- News Section -->
+    <section class="akj-news-section">
+        <div class="akj-container">
+            <div class="akj-section-header">
+                <h2 class="akj-section-title">お知らせ‧コラム</h2>
+                <img src="/assets/decoration.png" alt="">
+               
+                </div>
+            </div>
+            
+            <p class="akj-news-subtitle">秋山塾からのお知らせやお役立ち情報をお届け！</p>
+            
+            <div class="akj-news-grid">
+                <article class="akj-news-card">
+                    <div class="akj-news-image"></div>
+                    <div class="akj-news-content">
+                        <h3 class="akj-news-title">新学年でつまずく子の共通点とは？春休みが分かれ道になる理由</h3>
+                        <div class="akj-news-tag">
+                            <span class="akj-news-tag-text">お役立ち情報</span>
+                        </div>
+                        <div class="akj-news-date">2025.01.06</div>
+                    </div>
+                </article>
+                
+                <article class="akj-news-card">
+                    <div class="akj-news-image"></div>
+                    <div class="akj-news-content">
+                        <h3 class="akj-news-title">新学年でつまずく子の共通点とは？春休みが分かれ道になる理由</h3>
+                        <div class="akj-news-tag">
+                            <span class="akj-news-tag-text">お役立ち情報</span>
+                        </div>
+                        <div class="akj-news-date">2025.01.06</div>
+                    </div>
+                </article>
+                
+                <article class="akj-news-card">
+                    <div class="akj-news-image"></div>
+                    <div class="akj-news-content">
+                        <h3 class="akj-news-title">新学年でつまずく子の共通点とは？春休みが分かれ道になる理由</h3>
+                        <div class="akj-news-tag">
+                            <span class="akj-news-tag-text">お役立ち情報</span>
+                        </div>
+                        <div class="akj-news-date">2025.01.06</div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="akj-news-navigation">
+                <button class="akj-nav-button prev">
+                    <div class="akj-nav-arrow"></div>
+                </button>
+                <div class="akj-pagination-dots">
+                    <div class="akj-dot active"></div>
+                    <div class="akj-dot"></div>
+                </div>
+                <button class="akj-nav-button next">
+                    <div class="akj-nav-arrow"></div>
+                </button>
+            </div>
+            
+            <a href="#" class="akj-btn-primary">
+                <span class="akj-btn-text">お知らせ‧コラム一覧</span>
+                <div class="akj-btn-arrow"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <div class="cta-heading fade-in">
+<div style="display: flex; align-items: center; gap: 12px; justify-content: center;">
+  <img class="mirror" src="/assets/illustration.png" alt="">
+  <div class="cta-title">まずは教室を<br>見学してみませんか？</div>
+  <img src="/assets/illustration.png" alt="">
+</div>
+        
+      <div class="cta-subtitle">教室見学・体験入塾の申込、資料請求は</div>
+                <div class="cta-subtitle cta-subtitle-bold">全てLINEにて承っております</div>
+            </div>
+            
+            <div class="cta-boxes slide-in-left">
+                <div class="cta-box">
+                    <div class="cta-box-title">見学したい・体験入塾したい</div>
+                    <div class="cta-box-text">初めての方は体験授業が完全無料！</div>
+                </div>    <div class="cta-overlay"></div>
+              <div class="cta-box">
+
+    <div class="cta-box-title">資料がほしい</div>
+    <div class="cta-box-text">PDFで即お届け！今すぐご検討いただけます。</div>
+</div>
+
+            </div>
+
+            <div class="scale-in">
+                <div style="text-align: center; font-size: 18px; font-weight: 700; margin-bottom: 16px;">
+                    10秒で各種申込・資料請求が完了！
+                </div>
+                <a href="#" class="main-cta-button">
+                    LINEでかんたん申込
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <div style="margin-top: 30px; text-align: center; font-size: 14px; text-decoration: underline;">
+                    今だけ特典つき！お申し込み方法はコチラ
+                </div>
+            </div>
+        </div>
+
+
+       </div>
+    </section>
+
+    <!-- Classroom Locations -->
+    <section class="locations">
+        <div class="section-header fade-in">
+            <div class="section-badge">上越市・糸魚川市No.1の教室数</div>
+            <h2 class="section-title">お近くの教室を探す</h2>
+          <img src="/assets/decoration.png" alt="">
+        </div>
+
+        <div class="locations-grid slide-in-left">
+            <div class="location-column">
+                <div class="location-header">上越市</div>
+                <div class="location-list">
+                    <div class="location-item">
+<i class="fa-solid fa-arrow-right"></i>
+                        直江津校
+                    </div>
+                    <div class="location-item">
+<i class="fa-solid fa-arrow-right"></i>
+                        直江津東校
+                    </div>
+                    <div class="location-item">
+<i class="fa-solid fa-arrow-right"></i>
+                        春日山校
+                    </div>
+                    <div class="location-item">
+<i class="fa-solid fa-arrow-right"></i>
+                        高田校
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-column">
+                <div class="location-header">妙高市</div>
+                <div class="location-list">
+                    <div class="location-item">
+<i class="fa-solid fa-arrow-right"></i>
+                        新井校
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-column">
+                <div class="location-header">糸魚川市</div>
+                <div class="location-list">
+                    <div class="location-item">
+<i class="fa-solid fa-arrow-right"></i>
+                        横町校
+                    </div>
+                    <div class="location-item">
+<i class="fa-solid fa-arrow-right"></i>
+                        押上校
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="view-all-btn scale-in">
+            教室一覧
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="akj-footer">
+        <div class="akj-footer-container">
+            <div class="akj-scroll-top">
+                <div class="akj-scroll-arrow"></div>
+            </div>
+            
+            <div class="akj-footer-content">
+                <div class="akj-footer-left">
+ <div class="logo-section">
+                 <img src="/assets/foot-logo.png" alt="">
+                
+            </div>                    
+                    <div class="akj-footer-social">
+                         <a href="#" class="line-cta">
+              <img src="/assets/Line.png" alt="">
+                <div>
+                    <div style="font-weight: 700; font-size: 13px;">教室⾒学‧体験⼊塾‧資料請求
+お申込は公式LINEから</div>
+                </div>
+            </a>
+                        
+                        <div class="akj-social-instagram">
+                            <div class="akj-instagram-icon"></div>
+                            <span class="akj-instagram-text">公式Instagram</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="akj-footer-right">
+                    <div class="akj-footer-nav">
+                        <a href="#" class="akj-footer-nav-item">
+                            小学生の個別指導
+                            <div class="akj-footer-nav-arrow"></div>
+                        </a>
+                        <a href="#" class="akj-footer-nav-item">
+                            中学生の個別指導
+                            <div class="akj-footer-nav-arrow"></div>
+                        </a>
+                        <a href="#" class="akj-footer-nav-item">
+                            高校生の個別指導
+                            <div class="akj-footer-nav-arrow"></div>
+                        </a>
+                    </div>
+                    
+                    <div class="akj-footer-section">
+                        <h4 class="akj-footer-section-title">季節講習</h4>
+                        <div class="akj-footer-subsection">
+                            <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                春期講習
+                                <div class="akj-footer-nav-arrow"></div>
+                            </a>
+                            <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                夏期講習
+                                <div class="akj-footer-nav-arrow"></div>
+                            </a>
+                            <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                冬期講習
+                                <div class="akj-footer-nav-arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="akj-footer-section">
+                        <h4 class="akj-footer-section-title">秋山塾について</h4>
+                        <div class="akj-footer-subsection">
+                            <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                秋山塾の特徴
+                                <div class="akj-footer-nav-arrow"></div>
+                            </a>
+                            <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                個別指導
+                                <div class="akj-footer-nav-arrow"></div>
+                            </a>
+                            <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                秋山塾のプロ講師
+                                <div class="akj-footer-nav-arrow"></div>
+                            </a>
+                            <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                お知らせ‧コラム
+                                <div class="akj-footer-nav-arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="akj-footer-section">
+                        <h4 class="akj-footer-section-title">入塾について</h4>
+                        <div class="akj-footer-subsection">
+                            <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                入塾のながれ
+                                <div class="akj-footer-nav-arrow"></div>
+                            </a>
+                            <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                授業料について
+                                <div class="akj-footer-nav-arrow"></div>
+                            </a>
+                            <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                合格実績
+                                <div class="akj-footer-nav-arrow"></div>
+                            </a>
+                            <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                生徒‧保護者様の声
+                                <div class="akj-footer-nav-arrow"></div>
+                            </a>
+                            <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                安全への取り組み
+                                <div class="akj-footer-nav-arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="akj-footer-section">
+                        <div class="akj-footer-nav" style="align-items: center;">
+                            <h4 class="akj-footer-section-title">教室一覧</h4>
+                            <div class="akj-footer-nav-arrow"></div>
+                        </div>
+                        <div style="padding-top: 8px; display: flex; flex-direction: column; gap: 8px;">
+                            <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+                                <div style="padding: 2px 8px; background: #E5E5E5; font-size: 16px;">上越市</div>
+                                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                                    <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                        直江津校
+                                        <div class="akj-footer-nav-arrow"></div>
+                                    </a>
+                                    <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                        直江津東校
+                                        <div class="akj-footer-nav-arrow"></div>
+                                    </a>
+                                    <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                        春日山校
+                                        <div class="akj-footer-nav-arrow"></div>
+                                    </a>
+                                    <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                        高田校
+                                        <div class="akj-footer-nav-arrow"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px;">
+                                <div style="padding: 2px 8px; background: #E5E5E5; font-size: 16px;">妙高市</div>
+                                <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                    新井校
+                                    <div class="akj-footer-nav-arrow"></div>
+                                </a>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px;">
+                                <div style="padding: 2px 8px; background: #E5E5E5; font-size: 16px;">糸魚川市</div>
+                                <div style="display: flex; gap: 20px;">
+                                    <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                        横町校
+                                        <div class="akj-footer-nav-arrow"></div>
+                                    </a>
+                                    <a href="#" class="akj-footer-nav-item" style="font-size: 16px;">
+                                        押上校
+                                        <div class="akj-footer-nav-arrow"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="akj-footer-bottom">
+                <div class="akj-footer-links">
+                    <a href="#" class="akj-footer-link">HOME</a>
+                    <a href="#" class="akj-footer-link">個人情報保護方針</a>
+                    <a href="#" class="akj-footer-link">情報セキュリティ方針</a>
+                    <a href="#" class="akj-footer-link">事業会社概要</a>
+                    <a href="#" class="akj-footer-link">お問い合わせ</a>
+                </div>
+                <div class="akj-copyright">
+                    Copyright © AKIYAMA JYUKU All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <script>
+    // ================================
+    // GSAP Animations Setup
+    // ================================
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+    document.addEventListener("DOMContentLoaded", () => {
+        initHeroSlider();
+        initScrollAnimations();
+        initFAQAccordion();
+        initNewsNavigation();
+        initScrollTop();
+        initHoverAnimations();
+        initDecorativeLines();
+        initParallaxCTA();
+        initNewsCardHover();
+        initMarquee();
+        initFeatureNumbers();
+        initPhotoMarquee();
+        animateHeader();
+        animateHeroSlider();
+        setupButtonAnimations();
+        setupMobileMenu();
+        window.addEventListener("scroll", animateOnScroll);
+    });
+
+    // ================================
+    // Hero Slider
+    // ================================
+    function initHeroSlider() {
         let currentSlide = 0;
-        const slides = document.querySelectorAll('.hero-slide');
-        const dots = document.querySelectorAll('.hero-dot');
+        const slides = document.querySelectorAll(".hero-slide");
+        const dots = document.querySelectorAll(".hero-dot");
+        const pauseBtn = document.querySelector(".hero-pause");
         const totalSlides = slides.length;
         let slideInterval;
         let isPaused = false;
 
         function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.toggle('active', i === index);
-            });
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
-            });
+            slides.forEach((slide, i) =>
+                slide.classList.toggle("active", i === index)
+            );
+            dots.forEach((dot, i) =>
+                dot.classList.toggle("active", i === index)
+            );
         }
 
         function nextSlide() {
@@ -514,9 +1001,8 @@
             clearInterval(slideInterval);
         }
 
-        // Dot click handlers
         dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
+            dot.addEventListener("click", () => {
                 currentSlide = index;
                 showSlide(currentSlide);
                 stopSlideShow();
@@ -524,181 +1010,355 @@
             });
         });
 
-        // Pause/Play functionality
-        document.querySelector('.hero-pause').addEventListener('click', () => {
-            isPaused = !isPaused;
-            if (isPaused) {
-                stopSlideShow();
-            } else {
-                startSlideShow();
-            }
+        if (pauseBtn) {
+            pauseBtn.addEventListener("click", () => {
+                isPaused = !isPaused;
+                isPaused ? stopSlideShow() : startSlideShow();
+            });
+        }
+
+        startSlideShow();
+    }
+
+    // ================================
+    // Scroll Animations (GSAP)
+    // ================================
+    function initScrollAnimations() {
+        gsap.from(".akj-section-title", {
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            scrollTrigger: { trigger: ".akj-section-title", start: "top 80%" },
         });
 
-        // Start the slideshow
-        startSlideShow();
+        gsap.from(".akj-decorative-line", {
+            duration: 0.8,
+            scaleX: 0,
+            stagger: 0.1,
+            scrollTrigger: { trigger: ".akj-decorative-line", start: "top 80%" },
+        });
 
-        // Scroll animations
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
-            
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < window.innerHeight - elementVisible) {
-                    if (element.classList.contains('fade-in')) {
-                        gsap.to(element, {
-                            opacity: 1,
-                            y: 0,
-                            duration: 1,
-                            ease: "power2.out"
-                        });
-                    } else if (element.classList.contains('slide-in-left')) {
-                        gsap.to(element, {
-                            opacity: 1,
-                            x: 0,
-                            duration: 1,
-                            ease: "power2.out"
-                        });
-                    } else if (element.classList.contains('slide-in-right')) {
-                        gsap.to(element, {
-                            opacity: 1,
-                            x: 0,
-                            duration: 1,
-                            ease: "power2.out"
-                        });
-                    } else if (element.classList.contains('scale-in')) {
-                        gsap.to(element, {
-                            opacity: 1,
-                            scale: 1,
-                            duration: 1,
-                            ease: "back.out(1.7)"
+        gsap.from(".akj-faq-item", {
+            duration: 0.6,
+            x: -50,
+            opacity: 0,
+            stagger: 0.1,
+            scrollTrigger: { trigger: ".akj-faq-list", start: "top 70%" },
+        });
+
+        gsap.from(".akj-news-card", {
+            duration: 0.8,
+            y: 80,
+            opacity: 0,
+            stagger: 0.2,
+            scrollTrigger: { trigger: ".akj-news-grid", start: "top 70%" },
+        });
+
+        gsap.from(".akj-location-column", {
+            duration: 0.8,
+            y: 60,
+            opacity: 0,
+            stagger: 0.2,
+            scrollTrigger: { trigger: ".akj-locations-grid", start: "top 70%" },
+        });
+    }
+
+    // ================================
+    // FAQ Accordion
+    // ================================
+    function initFAQAccordion() {
+        const faqItems = document.querySelectorAll(".akj-faq-item");
+
+        faqItems.forEach((item) => {
+            const question = item.querySelector(".akj-faq-question");
+            const answer = item.querySelector(".akj-faq-answer");
+
+            question.addEventListener("click", () => {
+                const isActive = item.classList.contains("active");
+
+                // Close others
+                faqItems.forEach((other) => {
+                    if (other !== item) {
+                        other.classList.remove("active");
+                        const otherAnswer = other.querySelector(".akj-faq-answer");
+                        if (otherAnswer) {
+                            gsap.to(otherAnswer, {
+                                duration: 0.3,
+                                height: 0,
+                                opacity: 0,
+                                onComplete: () => (otherAnswer.style.display = "none"),
+                            });
+                        }
+                    }
+                });
+
+                // Toggle current
+                if (!isActive && answer) {
+                    item.classList.add("active");
+                    answer.style.display = "block";
+                    gsap.fromTo(
+                        answer,
+                        { height: 0, opacity: 0 },
+                        { duration: 0.4, height: "auto", opacity: 1 }
+                    );
+                } else {
+                    item.classList.remove("active");
+                    if (answer) {
+                        gsap.to(answer, {
+                            duration: 0.3,
+                            height: 0,
+                            opacity: 0,
+                            onComplete: () => (answer.style.display = "none"),
                         });
                     }
                 }
             });
+        });
+    }
+
+    // ================================
+    // News Navigation
+    // ================================
+    function initNewsNavigation() {
+        const prevBtn = document.querySelector(".akj-nav-button.prev");
+        const nextBtn = document.querySelector(".akj-nav-button.next");
+        const dots = document.querySelectorAll(".akj-dot");
+        let currentSlide = 0;
+
+        function updateDots(index) {
+            dots.forEach((dot, i) =>
+                dot.classList.toggle("active", i === index)
+            );
         }
 
-        // Marquee animation enhancement with GSAP
-        function enhanceMarquee() {
-            const marqueeTrack = document.querySelector('.marquee-track');
-            if (marqueeTrack) {
-                gsap.set(marqueeTrack, { x: 0 });
-                gsap.to(marqueeTrack, {
-                    x: -1950,
-                    duration: 20,
-                    ease: "none",
-                    repeat: -1
-                });
-            }
+        if (prevBtn) {
+            prevBtn.addEventListener("click", () => {
+                currentSlide = currentSlide === 0 ? dots.length - 1 : currentSlide - 1;
+                updateDots(currentSlide);
+                gsap.to(prevBtn, { duration: 0.1, scale: 0.95, yoyo: true, repeat: 1 });
+            });
         }
 
-        // Floating animation for feature numbers
-        function animateFeatureNumbers() {
-            const featureNumbers = document.querySelectorAll('.feature-number');
-            featureNumbers.forEach((number, index) => {
-                gsap.to(number, {
+        if (nextBtn) {
+            nextBtn.addEventListener("click", () => {
+                currentSlide = currentSlide === dots.length - 1 ? 0 : currentSlide + 1;
+                updateDots(currentSlide);
+                gsap.to(nextBtn, { duration: 0.1, scale: 0.95, yoyo: true, repeat: 1 });
+            });
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                currentSlide = index;
+                updateDots(currentSlide);
+            });
+        });
+    }
+
+    // ================================
+    // Scroll to Top
+    // ================================
+    function initScrollTop() {
+        const btn = document.querySelector(".akj-scroll-top");
+        if (btn) {
+            btn.addEventListener("click", () =>
+                gsap.to(window, { duration: 1, scrollTo: 0, ease: "power2.inOut" })
+            );
+        }
+    }
+
+    // ================================
+    // Hover Animations
+    // ================================
+    function initHoverAnimations() {
+        const buttons = document.querySelectorAll(".akj-btn-primary, .akj-line-btn, .akj-social-line");
+        buttons.forEach((btn) => {
+            btn.addEventListener("mouseenter", () => gsap.to(btn, { duration: 0.3, scale: 1.05 }));
+            btn.addEventListener("mouseleave", () => gsap.to(btn, { duration: 0.3, scale: 1 }));
+        });
+
+        const locationItems = document.querySelectorAll(".akj-location-item");
+        locationItems.forEach((item) => {
+            const arrow = item.querySelector(".akj-location-arrow");
+            item.addEventListener("mouseenter", () =>
+                gsap.to(arrow, { duration: 0.3, x: 10, ease: "back.out(1.7)" })
+            );
+            item.addEventListener("mouseleave", () =>
+                gsap.to(arrow, { duration: 0.3, x: 0 })
+            );
+        });
+    }
+
+    // ================================
+    // Decorative Line Animations
+    // ================================
+    function initDecorativeLines() {
+        document.querySelectorAll(".akj-line-segment").forEach((segment, i) => {
+            gsap.from(segment, {
+                duration: 0.5,
+                scaleY: 0,
+                delay: i * 0.1,
+                scrollTrigger: {
+                    trigger: segment.closest(".akj-decorative-line"),
+                    start: "top 80%",
+                },
+            });
+        });
+    }
+
+    // ================================
+    // CTA Parallax
+    // ================================
+    function initParallaxCTA() {
+        gsap.to(".akj-cta-image", {
+            yPercent: -50,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".akj-cta-section",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true,
+            },
+        });
+    }
+
+    // ================================
+    // News Card Hover
+    // ================================
+    function initNewsCardHover() {
+        document.querySelectorAll(".akj-news-card").forEach((card) => {
+            card.addEventListener("mouseenter", () =>
+                gsap.to(card, {
+                    duration: 0.4,
                     y: -10,
-                    duration: 2,
+                    boxShadow: "0px 15px 35px rgba(0, 0, 0, 0.2)",
+                    ease: "back.out(1.7)",
+                })
+            );
+            card.addEventListener("mouseleave", () =>
+                gsap.to(card, {
+                    duration: 0.4,
+                    y: 0,
+                    boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.1)",
+                })
+            );
+        });
+    }
+
+    // ================================
+    // Simple Scroll Animations
+    // ================================
+    function animateOnScroll() {
+        const elements = document.querySelectorAll(".fade-in, .slide-in-left, .slide-in-right, .scale-in");
+        elements.forEach((el) => {
+            const elementTop = el.getBoundingClientRect().top;
+            if (elementTop < window.innerHeight - 150) {
+                if (el.classList.contains("fade-in"))
+                    gsap.to(el, { opacity: 1, y: 0, duration: 1, ease: "power2.out" });
+                else if (el.classList.contains("slide-in-left"))
+                    gsap.to(el, { opacity: 1, x: 0, duration: 1, ease: "power2.out" });
+                else if (el.classList.contains("slide-in-right"))
+                    gsap.to(el, { opacity: 1, x: 0, duration: 1, ease: "power2.out" });
+                else if (el.classList.contains("scale-in"))
+                    gsap.to(el, { opacity: 1, scale: 1, duration: 1, ease: "back.out(1.7)" });
+            }
+        });
+    }
+
+    // ================================
+    // Marquee
+    // ================================
+    function initMarquee() {
+        const track = document.querySelector(".marquee-track");
+        if (track) {
+            gsap.set(track, { x: 0 });
+            gsap.to(track, { x: -1950, duration: 20, ease: "none", repeat: -1 });
+        }
+    }
+
+    // ================================
+    // Floating Feature Numbers
+    // ================================
+    function initFeatureNumbers() {
+        document.querySelectorAll(".feature-number").forEach((num, i) => {
+            gsap.to(num, {
+                y: -10,
+                duration: 2,
+                ease: "power2.inOut",
+                repeat: -1,
+                yoyo: true,
+                delay: i * 0.5,
+            });
+        });
+    }
+
+    // ================================
+    // Photo Marquee with Alternating Heights
+    // ================================
+    function initPhotoMarquee() {
+        const photos = document.querySelectorAll(".marquee-photo");
+        photos.forEach((photo, i) => {
+            if (i % 2 === 1) gsap.set(photo, { y: 60 });
+        });
+
+        setInterval(() => {
+            photos.forEach((photo) => {
+                const currentY = gsap.getProperty(photo, "y");
+                gsap.to(photo, {
+                    y: currentY === 0 ? 60 : 0,
+                    duration: 1.5,
                     ease: "power2.inOut",
-                    repeat: -1,
-                    yoyo: true,
-                    delay: index * 0.5
                 });
             });
-        }
+        }, 8000);
+    }
 
-        // CTA button hover animations
-        function setupButtonAnimations() {
-            const buttons = document.querySelectorAll('.main-cta-button, .view-all-btn, .plan-cta-btn');
-            buttons.forEach(button => {
-                button.addEventListener('mouseenter', () => {
-                    gsap.to(button, {
-                        scale: 1.05,
-                        duration: 0.3,
-                        ease: "power2.out"
-                    });
-                });
-                
-                button.addEventListener('mouseleave', () => {
-                    gsap.to(button, {
-                        scale: 1,
-                        duration: 0.3,
-                        ease: "power2.out"
-                    });
-                });
-            });
-        }
+    // ================================
+    // Header + Hero Animations
+    // ================================
+    function animateHeader() {
+        gsap.from(".header", { y: -100, opacity: 0, duration: 1, ease: "power2.out" });
+    }
 
-        // Photo marquee with alternating heights
-        function setupPhotoMarquee() {
-            const photos = document.querySelectorAll('.marquee-photo');
-            photos.forEach((photo, index) => {
-                if (index % 2 === 1) {
-                    gsap.set(photo, { y: 60 });
-                }
-            });
+    function animateHeroSlider() {
+        gsap.from(".hero-slider", {
+            scale: 0.8,
+            opacity: 0,
+            duration: 1.5,
+            ease: "back.out(1.7)",
+            delay: 0.5,
+        });
+    }
 
-            // Animate alternating pattern every 8 seconds
-            setInterval(() => {
-                photos.forEach((photo, index) => {
-                    const currentY = gsap.getProperty(photo, "y");
-                    gsap.to(photo, {
-                        y: currentY === 0 ? 60 : 0,
-                        duration: 1.5,
-                        ease: "power2.inOut"
-                    });
-                });
-            }, 8000);
-        }
+    // ================================
+    // Buttons (CTA)
+    // ================================
+    function setupButtonAnimations() {
+        document.querySelectorAll(".main-cta-button, .view-all-btn, .plan-cta-btn").forEach((btn) => {
+            btn.addEventListener("mouseenter", () =>
+                gsap.to(btn, { scale: 1.05, duration: 0.3, ease: "power2.out" })
+            );
+            btn.addEventListener("mouseleave", () =>
+                gsap.to(btn, { scale: 1, duration: 0.3, ease: "power2.out" })
+            );
+        });
+    }
 
-        // Header entrance animation
-        function animateHeader() {
-            gsap.from('.header', {
-                y: -100,
-                opacity: 0,
-                duration: 1,
-                ease: "power2.out"
-            });
-        }
+    // ================================
+    // Mobile Menu
+    // ================================
+    function setupMobileMenu() {
+        const nav = document.querySelector(".nav");
+        if (!nav) return;
 
-        // Hero slider entrance
-        function animateHeroSlider() {
-            gsap.from('.hero-slider', {
-                scale: 0.8,
-                opacity: 0,
-                duration: 1.5,
-                ease: "back.out(1.7)",
-                delay: 0.5
-            });
-        }
+        if (window.innerWidth <= 768) {
+            nav.style.display = "none";
 
-        // Initialize all animations
-        function init() {
-            animateHeader();
-            animateHeroSlider();
-            enhanceMarquee();
-            setupPhotoMarquee();
-            animateFeatureNumbers();
-            setupButtonAnimations();
-            animateOnScroll();
-            
-            // Add scroll listener
-            window.addEventListener('scroll', animateOnScroll);
-        }
-
-        // Start animations when DOM is loaded
-        document.addEventListener('DOMContentLoaded', init);
-
-        // Mobile menu toggle (if needed)
-        function setupMobileMenu() {
-            const nav = document.querySelector('.nav');
-            if (window.innerWidth <= 768) {
-                nav.style.display = 'none';
-                
-                // Create mobile menu button
-                const menuButton = document.createElement('button');
-                menuButton.innerHTML = '☰';
+            if (!document.querySelector(".mobile-menu-btn")) {
+                const menuButton = document.createElement("button");
+                menuButton.className = "mobile-menu-btn";
+                menuButton.innerHTML = "☰";
                 menuButton.style.cssText = `
                     position: fixed;
                     top: 20px;
@@ -712,23 +1372,24 @@
                     font-size: 20px;
                     cursor: pointer;
                 `;
-                
                 document.body.appendChild(menuButton);
-                
-                menuButton.addEventListener('click', () => {
-                    if (nav.style.display === 'none') {
-                        nav.style.display = 'block';
+
+                menuButton.addEventListener("click", () => {
+                    if (nav.style.display === "none") {
+                        nav.style.display = "block";
                         gsap.from(nav, { opacity: 0, y: -20, duration: 0.3 });
                     } else {
-                        nav.style.display = 'none';
+                        nav.style.display = "none";
                     }
                 });
             }
+        } else {
+            nav.style.display = "";
         }
+    }
 
-        // Setup mobile menu on load and resize
-        window.addEventListener('load', setupMobileMenu);
-        window.addEventListener('resize', setupMobileMenu);
-    </script>
+    window.addEventListener("resize", setupMobileMenu);
+</script>
+
 </body>
 </html>
